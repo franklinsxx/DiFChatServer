@@ -1,0 +1,49 @@
+Overview
+========================================================================================
+The current Dissent in Facebook project is consisted of following part.
+1. A Java (AWT) based desktop chat application including both client side and server side implementation. The server side is mainly focusing on chat group and user management. Another web based chat application is under development.
+2. A Dissent web server (implemented by Henry@Dedis) running dissent service (implemented by David@Dedis) for processing private data received from chat clients and send them to social gourp message post server.
+3. A social (Facebook) group message post server. 
+4. A Facebook application with social meta-data database for client side social data fetching and storing. The sourse code of this part is currently not included.
+
+Usage(Editing)
+========================================================================================
+1. DiFSocialPostServer
+java -jar "./DiFSocialPostServer/dist/DiFSocialPostServer.jar"
+2. DiFChatServer:
+java -jar "./DiFChatServer/dist/DiFChatServer.jar"
+3. DiFChatClient:
+java -jar "./DiFChatClient/dist/DiFChatClient.jar"
+
+Since the SocialPostServer and ChatServer is running on www.frankinsong.com, you can just only run the ChatClient to test this application.
+If you want to make your chat client connect to your local chat server, you need to modify the server url in the client side code.
+
+Lib
+========================================================================================
+restfb-1.6.7-jar
+mysql-connector-java-5.1.15-jar
+
+License
+========================================================================================
+While the code linked relies on a variety of licenses, which must be respected,
+the code contained herein shall use the following license:
+
+Copyright (C) 2011 Yale Dedis
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
+Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+Acknowledgement
+========================================================================================
+The chat appliation is developed based on Java Chat With Customizable GUI, a complete Java (AWT) Chat Application with great customizable GUI Interface, developed by Jeeva S.
+It is licensed under The Code Project Open License (CPOL)
