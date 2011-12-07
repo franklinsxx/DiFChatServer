@@ -17,7 +17,7 @@ public class DiFMsgPostClient {
 	// Constructor connection receiving a socket number
 	public DiFMsgPostClient(int port) {
 		// we use "localhost" as host name, the server is on the same machine
-		// but you can put the "real" server name or IP address like franklinsong.com: 1500
+		// but you can put the "real" server name or IP address like franklinsong.com: 1600
 		try {
 			socket = new Socket("localhost", port);
 		}
@@ -77,6 +77,6 @@ public class DiFMsgPostClient {
 
         /*
 	public static void main(String[] arg) {
-		new  DiFMsgPosterClient(1500);
+		new  DiFMsgPosterClient(1600);
 	}*/
 }

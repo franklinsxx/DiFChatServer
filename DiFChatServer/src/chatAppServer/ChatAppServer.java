@@ -376,7 +376,7 @@ public class ChatAppServer extends Frame implements Serializable, ActionListener
             clientObject = (ChatAppClientObject) userArrayList.get(gLoop);
             if((clientObject.getGroupName().equals(GroupName)) && (!(clientObject.getUserName().equals(UserName)))){
                 SendMsgToClient(clientObject.getSocket(), msgRFC);
-                DiFMsgPostClient DiFMsgSender = new DiFMsgPostClient(1500);
+                DiFMsgPostClient DiFMsgSender = new DiFMsgPostClient(1600);
                 DiFMsgSender.DiFMsgSender(msgRFC);
                 DiFMsgSender.Close();
                       System.out.println("|INFO|Server Send Msg: " + msgRFC);
